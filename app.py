@@ -27,6 +27,7 @@ class LabJackApp(QtWidgets.QMainWindow, layout_labjack.Ui_MainWindow):
         self.isStopClicked = True
         self.AnalogChannelSelected = 0
 
+    # GUI logic
     def CheckButtonState(self):
         if self.isStartClicked == True and self.isStopClicked == False:
             return True
